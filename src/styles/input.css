@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* 
+===========================
+font setting
+=========================== 
+*/
+
+  /* =========================== */
+  /* Dana  */
+  @font-face {
+    font-family: "danaRegular";
+    src: url(../utils/fonts/Dana/DanaFaNum-Regular.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "danaMedium";
+    src: url(../utils/fonts/Dana/DanaFaNum-Medium.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "danaBold";
+    src: url(../utils/fonts/Dana/DanaFaNum-DemiBold.woff2) format("woff2");
+  }
+
+  /* =========================== */
+  /* morabba  */
+  @font-face {
+    font-family: "morabbaLight";
+    src: url(../utils/fonts/Morabba/Morabba-Light.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "morabbaMedium";
+    src: url(../utils/fonts/Morabba/Morabba-Medium.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "morabbaBold";
+    src: url(../utils/fonts/Morabba/Morabba-Bold.woff2) format("woff2");
+  }
+}
+
+/* 
+===========================
+ScrollBar
+=========================== 
+*/
+.customScrollBar::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.customScrollBar::-webkit-scrollbar-track {
+  /* gray-300 */
+  background-color: #d1d5db;
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+}
+.customScrollBar::-webkit-scrollbar-thumb {
+  /*orange-200*/
+  background-color: #fed7aa;
+  background-clip: content-box;
+
+  border-radius: 1.25rem;
+  -webkit-border-radius: 1.25rem;
+  -moz-border-radius: 1.25rem;
+  -ms-border-radius: 1.25rem;
+  -o-border-radius: 1.25rem;
+}
+.customScrollBar::-webkit-scrollbar-thumb:hover {
+  /* orange-300 */
+  background-color: #fdba74;
+}
+
+/* 
+===========================
+custom classes
+=========================== 
+*/
+.storeBtnRotate {
+  rotate: z -90deg;
+}
+
+/* 
+===========================
+transition on all items
+=========================== 
+*/
+body * {
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition-delay: -50ms;
+}
+
+/* 
+===========================
+hero
+=========================== 
+*/
+#BgMobile {
+  background: url(../utils/image/background/headerBgMobile.webp);
+  background-color: lightgray; /* Used if the image is unavailable */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+#BgDesktop {
+  background: url(../utils/image/background/headerBgDesktop.webp);
+  background-color: lightgray; /* Used if the image is unavailable */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+
+/* 
+===========================
+
+=========================== 
+*/
