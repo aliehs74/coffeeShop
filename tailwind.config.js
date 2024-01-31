@@ -11,7 +11,15 @@ module.exports = {
       "morabba-Medium": "morabbaMedium",
       "morabba-Bold": "morabbaBold",
     },
-
+    screens: {
+      ms: "280px", //mobile small
+      mm: "350px", //mobile medium
+      ml: "425px", //mobile large
+      sm: "640px", //phablet
+      md: "768px", //tablet
+      lg: "1024px", //laptop
+      xl: "1280px", //dekstop
+    },
     extend: {
       colors: {
         brown: {
@@ -30,10 +38,12 @@ module.exports = {
       letterSpacing: {
         tightest: "-0.081em",
       },
-      screens: {
-        ml: "425px", //mobile large
-        mm: "350px", //mobile medium
-        ms: "280px", //mobile small
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          md: "0.625rem",
+        },
       },
     },
   },

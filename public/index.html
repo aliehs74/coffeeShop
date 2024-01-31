@@ -2,7 +2,7 @@
 <html
   lang="en"
   dir="rtl"
-  class="ms:text-xs mm:text-sm ml:text-base md:text-[10px] lg:text-xs xl:text-base"
+  class="ms:text-xs mm:text-sm ml:text-base sm:text-xl sm:leading-normal md:text-[10px] lg:text-xs xl:text-base"
 >
   <!-- ms:text-[10px] mm:text-xs ml:text-base  -->
 
@@ -1002,7 +1002,7 @@
             <!-- mobile Cart items -->
             <div
               id="mobile-cart-items"
-              class="flex flex-col justify-between max-h-screen min-h-screen text-base tracking-normal child:transition-colors text-zinc-700 dark:text-white font-dana-Regular"
+              class="relative flex flex-col justify-between max-h-screen min-h-full text-base tracking-normal child:transition-colors text-zinc-700 dark:text-white font-dana-Regular"
             >
               <!--mobile cart top-and-middle -->
               <div id="top-and-middle">
@@ -1029,7 +1029,7 @@
                 <!-- cart middle (products)-->
                 <div
                   id="mobile-all-products"
-                  class="flex flex-col overflow-y-auto transition-all divide-y-2 divide-gray-100 dark:divide-white/5 divide-solid child:py-5 scroll-smooth customScrollBar max-h-[75vh]"
+                  class="flex flex-col justify-start overflow-y-scroll transition-all divide-y-2 divide-gray-100 dark:divide-white/5 divide-solid child:py-5 scroll-smooth customScrollBar h-[72vh]"
                 >
                   <!-- product 1  -->
                   <div id="product 1" class="flex flex-row items-center">
@@ -1275,6 +1275,67 @@
                       </span>
                     </div>
                   </div>
+                  <!-- product 5  -->
+                  <div id="product 5" class="flex flex-row items-center">
+                    <!-- image -->
+                    <img
+                      id="cart-image"
+                      class="w-[5.625rem] h-[5.625rem]"
+                      src="../src/utils/image/products/p2.png"
+                      alt="product"
+                    />
+                    <!-- body -->
+                    <div
+                      id="cart-body "
+                      class="flex flex-col justify-between gap-1 max-h-[5.625rem]"
+                    >
+                      <!-- product title -->
+                      <h1 class="text-sm max-w-32 min-h-10 line-clamp-2">
+                        قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                      </h1>
+
+                      <!-- counter & discount -->
+                      <div
+                        id="counter-discount"
+                        class="flex items-center justify-between gap-2 mt-1"
+                      >
+                        <div
+                          id="counter"
+                          class="flex w-1/3 text-sm text-orange-300 border border-gray-300 rounded-[6.25rem] font-dana-Bold align-middle justify-center child:items-center max-h-5 h-full"
+                        >
+                          <div
+                            class="self-center align-middle translate-y-[10%]"
+                          >
+                            +
+                          </div>
+                          <div class="self-center ml-2 mr-1">2</div>
+                          <div
+                            class="flex self-center overflow-hidden rotate-90 max-h-2"
+                          >
+                            |
+                          </div>
+                        </div>
+
+                        <span
+                          id="discount"
+                          class="flex items-center w-2/3 text-xs text-teal-600 min-h-5 tracking-tightest dark:text-emerald-500"
+                          >14,500 تومان
+
+                          <span class="flex items-center w-5 h-5">
+                            <svg class="items-center w-full h-full">
+                              <use href="#discountLogo"></use>
+                            </svg>
+                          </span>
+                        </span>
+                      </div>
+
+                      <!-- price -->
+                      <span id="price" class="text-base font-dana-Bold">
+                        175,000
+                        <span class="text-xs leading-normal"> تومان</span>
+                      </span>
+                    </div>
+                  </div>
                   <!--  -->
                 </div>
                 <!--  End of mobile cart middle (products) -->
@@ -1284,7 +1345,7 @@
               <!--mobile cart bottom -->
               <div
                 id="cart-bottom"
-                class="absolute bottom-0 left-0 right-0 flex items-end justify-between px-4 py-2 pb-4 bg-white border-t-2 border-gray-300 dark:border-gray-600 dark:bg-zinc-700"
+                class="bottom-0 left-0 right-0 flex items-end justify-between px-4 py-2 pb-4 bg-white border-t-2 border-gray-300 dark:border-gray-600 dark:bg-zinc-700"
               >
                 <!-- submit button -->
                 <button
@@ -1314,13 +1375,12 @@
         </div>
       </div>
     </header>
-    <!-- hero -->
-    <div id="hero">
-      <div id="BgDesktop" class="hidden md:flex min-h-[56.5625rem]"></div>
-      <div id="BgMobile" class="flex md:hidden min-h-52"></div>
-
-
-      
+    <div class="container">
+      <!-- hero -->
+      <div id="hero">
+        <div id="BgDesktop" class="hidden md:flex min-h-[56.5625rem]"></div>
+        <div id="BgMobile" class="flex md:hidden min-h-52"></div>
+      </div>
     </div>
     <!-- overlay -->
     <div

@@ -599,6 +599,58 @@ font setting
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 280px) {
+  .container {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 350px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -790,6 +842,10 @@ font setting
   height: 7.5rem;
 }
 
+.h-\[72vh\] {
+  height: 72vh;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -819,10 +875,6 @@ font setting
   max-height: 5.625rem;
 }
 
-.max-h-\[75vh\] {
-  max-height: 75vh;
-}
-
 .max-h-screen {
   max-height: 100vh;
 }
@@ -847,8 +899,8 @@ font setting
   min-height: 56.5625rem;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-1 {
@@ -994,6 +1046,10 @@ font setting
 
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
 }
 
 .justify-center {
@@ -1538,14 +1594,14 @@ hero
 }
 
 @media (min-width: 350px) {
-  .mm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .mm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .mm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
@@ -1553,6 +1609,17 @@ hero
   .ml\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:leading-normal {
+    line-height: 1.5;
   }
 }
 
