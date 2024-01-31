@@ -35,7 +35,7 @@
   </head>
 
   <body
-    class="w-screen h-screen max-h-screen overflow-y-auto text-xl font-dana-Regular"
+    class="relative w-screen h-screen overflow-y-auto text-xl font-dana-Regular max-w-[100vw]"
   >
     <!-- define SVG -->
     <div id="refrence-SVG" class="hidden">
@@ -518,7 +518,10 @@
             </nav>
           </div>
           <!-- left side (sign & cart & dark) -->
-          <div id="sign-cart-dark" class="flex items-center text-orange-200">
+          <div
+            id="sign-cart-dark"
+            class="flex items-center text-orange-200 cursor-pointer"
+          >
             <!-- cart & dark -->
             <div id="cart-dark" class="flex">
               <!-- cart -->
@@ -815,7 +818,7 @@
       <!-- mobile header -->
       <div
         id="mobile-header"
-        class="flex flex-row items-center justify-between w-screen h-16 px-4 overflow-y-scroll bg-white md:hidden dark:bg-zinc-700"
+        class="flex flex-row items-center justify-between w-screen h-16 px-4 flow-y-au md:hidden dark:bg-zinc-700"
       >
         <!-- hamburger menu -->
         <div id="hamburger-menu">
@@ -1375,13 +1378,52 @@
         </div>
       </div>
     </header>
-    <div class="container">
-      <!-- hero -->
-      <div id="hero">
-        <div id="BgDesktop" class="hidden md:flex min-h-[56.5625rem]"></div>
-        <div id="BgMobile" class="flex md:hidden min-h-52"></div>
-      </div>
-    </div>
+    <!-- hero -->
+    <!-- <div id="hero">
+      <div id="BgDesktop" class="hidden md:flex min-h-[56.5625rem]"></div>
+      <div id="BgMobile" class="flex md:hidden min-h-52"></div>
+    </div> -->
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div>
+            <h2>قهوه عربیکا تانزانیا</h2>
+            <sub>یک فنجان بالانس !</sub>
+            <p>
+              قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه
+              است که در نواحی مختلف کمربند قهوه کشت میشود.
+            </p>
+          </div>
+
+          <!-- <div
+            id="hero"
+            class="top-0 left-0 right-0 w-screen mx-auto text-transparent bg-top bg-no-repeat bg-cover text-9xl/5 bg-heroMobile md:bg-heroDesktop"
+          >
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+            از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و
+            سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای
+            متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه
+            درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با
+            نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+            خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید
+            داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان
+            رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات
+            پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.لورم ایپسوم
+            متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+            گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که
+            لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف
+            بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال
+            و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها
+            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ
+            پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+            دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان
+            مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل
+            دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+          </div> -->
+        </div>
+      </section>
+    </main>
     <!-- overlay -->
     <div
       id="overlay"
