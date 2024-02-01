@@ -34,23 +34,24 @@ module.exports = {
         bodyBg: "url(../utils/image/background/body-bg.png)",
       },
     },
-  },
-  fontFamily: {
-    "dana-Regular": "danaRegular",
-    "dana-Medium": "danaMedium",
-    "dana-Bold": "danaBold",
-    "morabba-Light": "morabbaLight",
-    "morabba-Medium": "morabbaMedium",
-    "morabba-Bold": "morabbaBold",
-  },
-  screens: {
-    ms: "280px", //mobile small
-    mm: "350px", //mobile medium
-    ml: "425px", //mobile large
-    sm: "640px", //phablet
-    md: "768px", //tablet
-    lg: "1024px", //laptop
-    xl: "1280px", //dekstop
+
+    fontFamily: {
+      "dana-Regular": "danaRegular",
+      "dana-Medium": "danaMedium",
+      "dana-Bold": "danaBold",
+      "morabba-Light": "morabbaLight",
+      "morabba-Medium": "morabbaMedium",
+      "morabba-Bold": "morabbaBold",
+    },
+    screens: {
+      ms: "280px", //mobile small
+      mm: "350px", //mobile medium
+      ml: "425px", //mobile large
+      sm: "640px", //phablet
+      md: "768px", //tablet
+      lg: "1024px", //laptop
+      xl: "1280px", //dekstop
+    },
   },
   plugins: [
     require("tailwind-scrollbar"),

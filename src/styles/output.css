@@ -607,6 +607,24 @@ font setting
   padding-left: 1rem;
 }
 
+@media (min-width: 280px) {
+  .container {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 350px) {
+  .container {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 425px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -630,12 +648,6 @@ font setting
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
   }
 }
 
@@ -751,6 +763,10 @@ font setting
   margin-top: 2.25rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -806,6 +822,10 @@ font setting
   height: 1.25rem;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -851,6 +871,10 @@ font setting
   max-height: 0.5rem;
 }
 
+.max-h-2\.5 {
+  max-height: 0.625rem;
+}
+
 .max-h-3 {
   max-height: 0.75rem;
 }
@@ -875,16 +899,20 @@ font setting
   min-height: 3rem;
 }
 
+.min-h-2 {
+  min-height: 0.5rem;
+}
+
+.min-h-2\.5 {
+  min-height: 0.625rem;
+}
+
 .min-h-5 {
   min-height: 1.25rem;
 }
 
 .min-h-52 {
   min-height: 13rem;
-}
-
-.min-h-\[56\.5625rem\] {
-  min-height: 56.5625rem;
 }
 
 .min-h-full {
@@ -980,6 +1008,10 @@ font setting
   width: 100vw;
 }
 
+.min-w-\[6\.25rem\] {
+  min-width: 6.25rem;
+}
+
 .max-w-32 {
   max-width: 8rem;
 }
@@ -990,6 +1022,22 @@ font setting
 
 .max-w-\[108rem\] {
   max-width: 108rem;
+}
+
+.max-w-\[6\.25rem\] {
+  max-width: 6.25rem;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-5 {
+  max-width: 1.25rem;
+}
+
+.max-w-52 {
+  max-width: 13rem;
 }
 
 .-translate-y-1\/4 {
@@ -1042,6 +1090,10 @@ font setting
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -1113,10 +1165,6 @@ font setting
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .overflow-y-scroll {
@@ -1193,6 +1241,11 @@ font setting
   background-color: rgb(0 0 0 / 0.5);
 }
 
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -1200,6 +1253,15 @@ font setting
 
 .bg-orange-200\/20 {
   background-color: rgb(254 215 170 / 0.2);
+}
+
+.bg-orange-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
+.bg-red-400\/35 {
+  background-color: rgb(248 113 113 / 0.35);
 }
 
 .bg-teal-600 {
@@ -1278,13 +1340,41 @@ font setting
   padding-top: 2rem;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .align-middle {
   vertical-align: middle;
 }
 
-.text-9xl\/5 {
-  font-size: 8rem;
-  line-height: 1.25rem;
+.font-dana-Bold {
+  font-family: danaBold;
+}
+
+.font-dana-Medium {
+  font-family: danaMedium;
+}
+
+.font-dana-Regular {
+  font-family: danaRegular;
+}
+
+.font-morabba-Bold {
+  font-family: morabbaBold;
+}
+
+.font-morabba-Light {
+  font-family: morabbaLight;
+}
+
+.font-morabba-Medium {
+  font-family: morabbaMedium;
+}
+
+.text-2xl\/8 {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-base {
@@ -1305,6 +1395,11 @@ font setting
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xl\/8 {
+  font-size: 1.25rem;
+  line-height: 2rem;
 }
 
 .text-xs {
@@ -1356,8 +1451,9 @@ font setting
   color: rgb(13 148 136 / var(--tw-text-opacity));
 }
 
-.text-transparent {
-  color: transparent;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-zinc-600 {
@@ -1526,6 +1622,11 @@ hero
   padding-bottom: 1.25rem;
 }
 
+.child\:drop-shadow-sm>* {
+  --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .child\:transition-colors>* {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1591,6 +1692,36 @@ hero
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 280px) {
+  .ms\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .ms\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 350px) {
+  .mm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .mm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .ml\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:text-xl {
     font-size: 1.25rem;
@@ -1609,6 +1740,10 @@ hero
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[56\.56rem\] {
+    height: 56.56rem;
   }
 
   .md\:bg-heroDesktop {
