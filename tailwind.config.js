@@ -51,6 +51,7 @@ module.exports = {
       md: "768px", //tablet
       lg: "1024px", //laptop
       xl: "1280px", //dekstop
+      xxl: "1536px", //big Monitor
     },
   },
   plugins: [
