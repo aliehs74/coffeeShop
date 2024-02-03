@@ -2,7 +2,7 @@
 <html
   lang="en"
   dir="rtl"
-  class="ms:text-xs mm:text-sm ml:text-base sm:text-xl sm:leading-normal md:text-[10px] lg:text-xs xl:text-base"
+  class="ms:text-xs mm:text-sm ml:text-base sm:text-xl/normal md:text-[10px] lg:text-xs xl:text-base"
 >
   <head>
     <meta charset="UTF-8" />
@@ -459,7 +459,10 @@
     <header>
       <!--  -->
       <!-- tablet and laptop header -->
-      <div id="tablet-laptop-header" class="hidden w-full mx-auto md:flex">
+      <div
+        id="tablet-laptop-header"
+        class="hidden w-full mx-auto md:flex z-50 relative"
+      >
         <!-- backgroundImage -->
 
         <!-- headerItems -->
@@ -1377,32 +1380,34 @@
       </div>
     </header>
     <!-- main -->
-    <main class="h-full w-screen md:min-w-[100vw]">
+    <main class="w-screen">
       <!-- hero -->
       <section
         id="hero"
-        class="h-52 bg-top bg-no-repeat bg-contain xxl:bg-cover bg-heroMobile md:bg-heroDesktop text-white flex justify-end items-center min-w-full md:min-h-[56.56rem]"
+        class="h-auto bg-top bg-cover bg-no-repeat mx-auto bg-heroMobile md:bg-heroDesktop text-white flex justify-end items-center aspect-[2/1] z-10"
       >
         <div
           id="hero-text"
-          class="text-right child:drop-shadow-sm max-w-52 ml-4 items-center py-[1.88rem] h-full md:py-[19rem] md:max-w-[28.875rem] md:ml-[20.63rem]"
+          class="text-right child:drop-shadow-sm max-w-52 ml-4 items-center py-[1.88rem] md:max-w-[28.875rem] md:ml-[10vw]"
         >
-          <h2 class="text-2xl/8 font-morabba-Bold -mb-1">
+          <h2 class="text-2xl/8 font-morabba-Bold -mb-1 md:text-5xl/[3.875rem]">
             قهوه عربیکا تانزانیا
           </h2>
-          <sub class="text-xl/8 font-morabba">یک فنجان بالانس !</sub>
+          <sub class="text-xl/8 font-morabba md:text-4xl/[4rem]"
+            >یک فنجان بالانس !</sub
+          >
           <div
             id="hero-text-devide"
-            class="bg-orange-300 min-w-[6.25rem] min-h-[0.0625rem] max-w-[6.25rem] max-h-[0.0625rem] my-3"
+            class="bg-orange-300 min-w-[6.25rem] min-h-[0.0625rem] max-w-[6.25rem] max-h-[0.0625rem] my-3 md:my-8 md:min-h-[0.125rem]"
           ></div>
-          <p class="text-xs">
+          <p class="text-xs md:text-2xl">
             قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است
             که در نواحی مختلف کمربند قهوه کشت میشود.
           </p>
         </div>
       </section>
       <section id="container" class="container h-full">
-        <div class="bg-blue-700">hello</div>
+        <div class="bg-blue-700 min-h-[60rem]">hello</div>
       </section>
     </main>
     <!-- overlay -->
