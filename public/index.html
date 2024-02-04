@@ -453,6 +453,26 @@
             />
           </g>
         </symbol>
+        <symbol
+          id="curve"
+          viewBox="0 0 100 22"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" />
+        </symbol>
+        <symbol
+          id="chevron-down-mini"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+            clip-rule="evenodd"
+          />
+        </symbol>
       </svg>
     </div>
     <!-- header -->
@@ -461,7 +481,7 @@
       <!-- tablet and laptop header -->
       <div
         id="tablet-laptop-header"
-        class="hidden w-full mx-auto md:flex z-50 relative"
+        class="relative z-50 hidden w-full mx-auto md:flex"
       >
         <!-- backgroundImage -->
 
@@ -1384,8 +1404,11 @@
       <!-- hero -->
       <section
         id="hero"
-        class="h-auto bg-top bg-cover bg-no-repeat mx-auto bg-heroMobile md:bg-heroDesktop text-white flex justify-end items-center aspect-[2/1] z-10"
+        class="h-auto bg-top bg-cover bg-no-repeat mx-auto bg-heroMobile md:bg-heroDesktop text-white flex justify-end items-center aspect-[2/1] z-10 relative"
       >
+        <!-- make hero full screen -->
+        <div class="w-screen"></div>
+        <!-- hero text-->
         <div
           id="hero-text"
           class="text-right child:drop-shadow-sm max-w-52 ml-4 items-center py-[1.88rem] md:max-w-[28.875rem] md:ml-[10vw]"
@@ -1405,9 +1428,51 @@
             که در نواحی مختلف کمربند قهوه کشت میشود.
           </p>
         </div>
+        <!-- hero custom shape bottom-center -->
+        <div
+          id="hero-custom-shape"
+          class="absolute bottom-0 hidden translate-x-1/2 translate-y-1/2 md:flex right-1/2 left-1/2 w-fit"
+        >
+          <!-- curve & arrow -->
+          <div
+            id="curve-arrow"
+            class="absolute flex flex-col items-center justify-center translate-x-1/2 -translate-y-1/2 top-[45%] bottom-1/2 right-1/2 left-1/2 w-fit h-fit"
+          >
+            <!-- curve -->
+            <svg class="text-gray-100 w-24 h-[1.375rem] flex">
+              <use href="#curve"></use>
+            </svg>
+            <!-- arrow -->
+            <div
+              id="arrow-down-mini"
+              class="border-2 border-orange-300 w-5 h-5 flex items-center justify-center absolute top-1/2 bottom-1/2 right-1/2 left-1/2 translate-x-1/2 -translate-y-1/2 rounded-[100%]"
+            >
+              <svg
+                class="flex items-center justify-center w-5 h-5 text-zinc-700"
+              >
+                <use href="#chevron-down-mini"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- multi-circule -->
+          <div id="multi-circule" class="flex items-center justify-center">
+            <div
+              class="w-48 h-48 border-white/25 border rounded-[100%] items-center justify-center flex"
+            >
+              <div
+                class="w-36 h-36 border-white/50 border rounded-[100%] items-center justify-center flex"
+              >
+                <div
+                  class="w-24 h-24 border-white/80 border rounded-[100%]"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+      <!-- container -->
       <section id="container" class="container h-full">
-        <div class="bg-blue-700 min-h-[60rem]">hello</div>
+        <div class="bg-blue-600 min-h-[60rem] z-20 relative">hello</div>
       </section>
     </main>
     <!-- overlay -->
