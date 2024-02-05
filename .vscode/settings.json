@@ -1,0 +1,9 @@
+{
+  "headwind.runOnSave": false,
+  "tailwind-fold.foldStyle": "ALL",
+  "tailwind-fold.unfoldIfLineSelected": true,
+  "tailwind-fold.foldedTextBackgroundColor": "#565656",
+  "tailwind-fold.foldedTextColor": "#0EA5E9",
+  "files.autoSave": "onFocusChange",
+  "files.autoSaveDelay": 3000
+}
