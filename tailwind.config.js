@@ -25,7 +25,9 @@ module.exports = {
         center: true,
         padding: {
           DEFAULT: "1rem",
-          md: "0.625rem",
+          md: "15%",
+          xl: "9%",
+          xxl: "7%",
         },
       },
       backgroundImage: {

@@ -473,6 +473,34 @@
             clip-rule="evenodd"
           />
         </symbol>
+        <symbol
+          id="arrows-right-left"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
+          />
+        </symbol>
+        <symbol
+          id="star"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+          />
+        </symbol>
       </svg>
     </div>
     <!-- header -->
@@ -1478,10 +1506,107 @@
         </div>
       </section>
       <!-- container -->
-      <section id="container" class="container h-full">
+      <section
+        id="container"
+        class="container relative h-full bg-top bg-no-repeat bg-contain bodyBg"
+      >
+        <!-- newest products -->
         <div
-          class="relative bodyBg bg-top bg-no-repeat bg-contain h-[900px]"
-        ></div>
+          id="newest-products"
+          class="h-[900px] text-zinc-700 dark:text-white lg:pt-48 pt-8"
+        >
+          <!-- title -->
+          <div id="newset-products-title" class="flex flex-col">
+            <h2 class="font-morabba-Medium text-2xl/8 lg:text-5xl/[3rem]">
+              جدیدترین محصولات
+            </h2>
+            <div class="flex items-center justify-between">
+              <span class="font-morabba-Light text-xl/8 lg:text-3xl/[3rem]"
+                >فرآوری شده از دانه قهوه</span
+              >
+              <a
+                href="#"
+                class="flex items-center text-base text-orange-300 tracking-tightest lg:text-xl min-h-12"
+              >
+                مشاهده همه
+                <span class="hidden md:inline">محصولات</span>
+                <svg class="w-4 h-4 lg:w-5 lg:h-5">
+                  <use href="#chevron-left"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!--newest-products items  -->
+          <div
+            id="newest-products-items"
+            class="grid grid-cols-2 gap-3.5 md:gap-5 pt-5 sm:grid-cols-3 lg:grid-cols-4"
+          >
+            <!-- item 1 -->
+            <div
+              class="flex flex-col bg-white dark:bg-zinc-700 rounded-2xl shadow-normal relative p-5 min-w-44 min-h-[17rem] gap-1"
+            >
+              <!-- discount percent -->
+              <span
+                class="w-10 h-5 bg-orange-300 text-white dark:text-zinc-700 text-sm font-dana-Bold rounded-[6.25rem] flex justify-center items-center absolute top-2 right-2 pt-1 pl-1"
+                >12%
+              </span>
+              <!-- image -->
+              <img
+                loading="lazy"
+                src="../src/utils/image/products/p1.png"
+                alt="p1"
+                class="min-w-32 min-h-32"
+              />
+              <!-- title -->
+              <h4 class="text-sm/7 line-clamp-2 min-h-14 font-dana-Medium">
+                قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم ...
+              </h4>
+              <!-- price -->
+              <div class="text-teal-600 dark:text-emerald-500">
+                <span class="text-base font-dana-Bold">154,000</span>
+                <span class="text-sm tracking-tightest">تومان</span>
+                <span
+                  class="line-through decoration-red-500 decoration-1 text-sm text-gray-400 mr-2"
+                  >175,000</span
+                >
+              </div>
+              <!-- bottom -->
+              <div class="flex justify-between items-center">
+                <!-- right -->
+                <div class="flex text-gray-400 gap-x-1 items-center">
+                  <svg
+                    class="w-6 h-6 p-1 bg-gray-100 dark:bg-zinc-800 rounded-full"
+                  >
+                    <use href="#cart"></use>
+                  </svg>
+                  <svg class="w-4 h-4">
+                    <use href="#arrows-right-left"></use>
+                  </svg>
+                </div>
+                <!-- left -->
+                <div class="flex">
+                  <svg class="w-4 h-4 text-gray-300">
+                    <use href="#star"></use>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-400">
+                    <use href="#star"></use>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-400">
+                    <use href="#star"></use>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-400">
+                    <use href="#star"></use>
+                  </svg>
+                  <svg class="w-4 h-4 text-yellow-400">
+                    <use href="#star"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div></div>
+          </div>
+        </div>
       </section>
     </main>
     <!-- overlay -->
