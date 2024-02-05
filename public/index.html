@@ -548,13 +548,13 @@
               <!-- cart -->
               <div id="cartGroup " class="relative ml-5 group">
                 <!-- Cart icon -->
-                <svg id="cart-icon" class="w-8 h-8 peer">
+                <svg id="cart-icon" class="w-8 h-8">
                   <use href="#cart"></use>
                 </svg>
                 <!--  Cart submenu -->
                 <div
                   id="cart-box"
-                  class="absolute border-t-[3px] bg-white border-[#FAB873] rounded-2xl dark:bg-zinc-700 shadow-normal h-0 w-0 mt-5 opacity-0 invisible transition-all delay-75 duration-300 left-0 peer-hover:opacity-100 peer-hover:visible peer-hover:h-fit peer-hover:w-[25rem] hover:opacity-100 hover:visible hover:h-fit hover:w-[25rem]"
+                  class="absolute border-t-[3px] bg-white border-[#FAB873] rounded-2xl dark:bg-zinc-700 shadow-normal h-0 w-0 mt-5 opacity-0 invisible transition-all delay-75 duration-300 left-0 group-hover:opacity-100 group-hover:visible group-hover:h-fit group-hover:w-[25rem]"
                 >
                   <div
                     id="cart-items"
@@ -577,7 +577,7 @@
                     </div>
                     <!-- cart middle (products)-->
                     <div
-                      id="all-products"
+                      id="cart-all-products"
                       class="flex flex-col transition-all divide-y-2 divide-gray-100 dark:divide-white/5 divide-solid child:py-5 scroll-smooth customScrollBar child:ml-4"
                     >
                       <!-- product 1  -->
@@ -1481,10 +1481,7 @@
       <section id="container" class="container h-full">
         <div
           class="relative bodyBg bg-top bg-no-repeat bg-contain h-[900px]"
-        >
-      
-      
-      </div>
+        ></div>
       </section>
     </main>
     <!-- overlay -->

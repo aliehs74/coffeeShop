@@ -17,19 +17,23 @@ toggleThemeBtns.forEach((toggleThemeBtn) => {
 //===========================
 // Product cart scroll
 //===========================
-const allProducts = document.querySelector("#all-products");
-const allProductsHeight = parseInt(getComputedStyle(allProducts).height);
+const cartAllProducts = document.querySelector("#cart-all-products");
+const cartAllProductsHeight = parseInt(
+  getComputedStyle(cartAllProducts).height
+);
 
 const firstProductHeight = parseInt(
-  getComputedStyle(allProducts.children[0]).height
+  getComputedStyle(cartAllProducts.children[0]).height
 );
-allProducts.style.maxHeight = 2.5 * firstProductHeight + "px";
+cartAllProducts.style.maxHeight = 1.5 * firstProductHeight + "px";
 
-if (allProductsHeight > 2.5 * firstProductHeight) {
-  allProducts.classList.add("overflow-y-scroll");
+if (cartAllProductsHeight > 1.5 * firstProductHeight) {
+  cartAllProducts.classList.add("overflow-y-scroll");
 } else {
-  allProducts.classList.remove("overflow-y-scroll");
+  cartAllProducts.classList.remove("overflow-y-scroll");
 }
+
+console.log(cartAllProducts);
 
 //===========================
 // open/close mobile menu
