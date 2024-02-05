@@ -31,7 +31,6 @@ module.exports = {
       backgroundImage: {
         heroMobile: "url(../utils/image/background/headerBgMobile.webp)",
         heroDesktop: "url(../utils/image/background/headerBgDesktop.webp)",
-        bodyBg: "url(../utils/image/background/body-bg.png)",
       },
     },
 

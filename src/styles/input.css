@@ -120,6 +120,31 @@ hero
 
 /* 
 ===========================
+body background
+=========================== 
+*/
+.bodyBg {
+  background: linear-gradient(
+      rgba(243, 244, 246, 0.5),
+      rgba(243, 244, 246, 0.6),
+      rgba(243, 244, 246, 0.7),
+      rgba(243, 244, 246, 0.8),
+      rgba(243, 244, 246, 0.9),
+      rgba(243, 244, 246)
+    ),
+    url("../utils/image/background/body-bg.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+html.dark .bodyBg {
+  background: url("../utils/image/background/body-bg.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* 
+===========================
 
 =========================== 
 */

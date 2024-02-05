@@ -657,6 +657,10 @@ font setting
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -705,16 +709,16 @@ font setting
   top: 0px;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
 .top-1\/4 {
   top: 25%;
 }
 
-.top-\[45\%\] {
-  top: 45%;
+.top-3\/4 {
+  top: 75%;
+}
+
+.top-\[40\%\] {
+  top: 40%;
 }
 
 .z-10 {
@@ -905,6 +909,10 @@ font setting
   height: 72vh;
 }
 
+.h-\[900px\] {
+  height: 900px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -922,8 +930,16 @@ font setting
   height: 100vh;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .max-h-2 {
   max-height: 0.5rem;
+}
+
+.max-h-24 {
+  max-height: 6rem;
 }
 
 .max-h-3 {
@@ -946,38 +962,6 @@ font setting
   max-height: 100vh;
 }
 
-.max-h-24 {
-  max-height: 6rem;
-}
-
-.max-h-\[\] {
-  max-height: ;
-}
-
-.max-h-\[1\] {
-  max-height: 1;
-}
-
-.max-h-\[1\*\*\/2\] {
-  max-height: 1**/2;
-}
-
-.max-h-\[1\/2\] {
-  max-height: 1/2;
-}
-
-.max-h-\[50\] {
-  max-height: 50;
-}
-
-.max-h-\[50\#\] {
-  max-height: 50#;
-}
-
-.max-h-\[50\%\] {
-  max-height: 50%;
-}
-
 .min-h-10 {
   min-height: 2.5rem;
 }
@@ -992,10 +976,6 @@ font setting
 
 .min-h-52 {
   min-height: 13rem;
-}
-
-.min-h-64 {
-  min-height: 16rem;
 }
 
 .min-h-\[0\.0625rem\] {
@@ -1099,6 +1079,10 @@ font setting
   width: 100vw;
 }
 
+.w-0 {
+  width: 0px;
+}
+
 .min-w-\[6\.25rem\] {
   min-width: 6.25rem;
 }
@@ -1130,6 +1114,11 @@ font setting
 
 .-translate-y-1\/4 {
   --tw-translate-y: -25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-\[50\%\] {
+  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1364,9 +1353,9 @@ font setting
   background-color: rgb(0 0 0 / 0.5);
 }
 
-.bg-blue-800 {
+.bg-gray-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-gray-300 {
@@ -1395,6 +1384,10 @@ font setting
 
 .bg-heroMobile {
   background-image: url(../utils/image/background/headerBgMobile.webp);
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-cover {
@@ -1591,6 +1584,10 @@ font setting
   opacity: 0;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-normal {
   --tw-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.05);
   --tw-shadow-colored: 0px 1px 10px 0px var(--tw-shadow-color);
@@ -1706,6 +1703,34 @@ hero
 
 /* 
 ===========================
+body background
+=========================== 
+*/
+
+.bodyBg {
+  background: linear-gradient(
+      rgba(243, 244, 246, 0.5),
+      rgba(243, 244, 246, 0.6),
+      rgba(243, 244, 246, 0.7),
+      rgba(243, 244, 246, 0.8),
+      rgba(243, 244, 246, 0.9),
+      rgba(243, 244, 246)
+    ),
+    url("../utils/image/background/body-bg.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+html.dark .bodyBg {
+  background: url("../utils/image/background/body-bg.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* 
+===========================
 
 =========================== 
 */
@@ -1714,8 +1739,55 @@ hero
   visibility: visible;
 }
 
+.group:hover .group-hover\:h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+.peer:hover ~ .peer-hover\:visible {
+  visibility: visible;
+}
+
+.peer:hover ~ .peer-hover\:h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.peer:hover ~ .peer-hover\:w-1 {
+  width: 0.25rem;
+}
+
+.peer:hover ~ .peer-hover\:w-\[25rem\] {
+  width: 25rem;
+}
+
+.peer:hover ~ .peer-hover\:opacity-100 {
+  opacity: 1;
+}
+
+.hover\:visible:hover {
+  visibility: visible;
+}
+
+.hover\:h-fit:hover {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.hover\:w-\[25rem\]:hover {
+  width: 25rem;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
+.child\:visible>* {
+  visibility: visible;
 }
 
 .child\:mb-4>* {
@@ -1743,6 +1815,10 @@ hero
   padding-bottom: 1.25rem;
 }
 
+.child\:opacity-100>* {
+  opacity: 1;
+}
+
 .child\:drop-shadow-sm>* {
   --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1762,9 +1838,47 @@ hero
   transition-duration: 300ms;
 }
 
+.group:hover .group-hover\:child\:visible>* {
+  visibility: visible;
+}
+
+.group:hover .group-hover\:child\:h-fit>* {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.group:hover .group-hover\:child\:opacity-100>* {
+  opacity: 1;
+}
+
+.hover\:child\:visible>*:hover {
+  visibility: visible;
+}
+
+.hover\:child\:h-fit>*:hover {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.hover\:child\:opacity-100>*:hover {
+  opacity: 1;
+}
+
+.child-hover\:visible>*:hover {
+  visibility: visible;
+}
+
+.child-hover\:w-1>*:hover {
+  width: 0.25rem;
+}
+
 .child-hover\:text-orange-300>*:hover {
   --tw-text-opacity: 1;
   color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
+.child-hover\:opacity-100>*:hover {
+  opacity: 1;
 }
 
 :is(.dark .dark\:inline-block) {
@@ -1803,14 +1917,29 @@ hero
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
+:is(.dark .dark\:bg-zinc-800) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
 :is(.dark .dark\:text-emerald-500) {
   --tw-text-opacity: 1;
   color: rgb(16 185 129 / var(--tw-text-opacity));
 }
 
+:is(.dark .dark\:text-gray-100) {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:text-zinc-800) {
+  --tw-text-opacity: 1;
+  color: rgb(39 39 42 / var(--tw-text-opacity));
 }
 
 @media (min-width: 280px) {
