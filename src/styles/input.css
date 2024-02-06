@@ -80,7 +80,6 @@ custom classes
 */
 .storeBtnRotate {
   rotate: z -90deg;
-  
 }
 
 /* 
@@ -144,6 +143,36 @@ html.dark .bodyBg {
   background-size: contain;
   background-repeat: no-repeat;
 }
+/* 
+===========================
+category
+=========================== 
+*/
+.category-top-right {
+  background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.6) 33.85%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("../utils/image/categories/category-right.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+.category-top-left {
+  background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 0.6) 33.85%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url("../utils/image/categories/category-left.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
 /* 
 ===========================
 
