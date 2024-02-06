@@ -21,18 +21,19 @@ module.exports = {
       letterSpacing: {
         tightest: "-0.081em",
       },
+      backgroundImage: {
+        heroMobile: "url(../utils/image/background/headerBgMobile.webp)",
+        heroDesktop: "url(../utils/image/background/headerBgDesktop.webp)",
+      },
       container: {
         center: true,
         padding: {
           DEFAULT: "1rem",
           md: "15%",
-          xl: "9%",
-          xxl: "7%",
+          lg: "10",
+          xl: "1%",
+          xxl: "5%",
         },
-      },
-      backgroundImage: {
-        heroMobile: "url(../utils/image/background/headerBgMobile.webp)",
-        heroDesktop: "url(../utils/image/background/headerBgDesktop.webp)",
       },
     },
 
