@@ -110,5 +110,50 @@ overlay.addEventListener("click", () => {
 });
 
 //===========================
+//swiper
+//===========================
+const swiper = new Swiper(".swiper", {
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next-custom",
+    prevEl: ".swiper-button-prev-custom",
+  },
+  loop: true,
+  grabCursor: true,
+
+  // default breakpoints
+  slidesPerView: 2,
+  spaceBetween: 5,
+  breakpoints: {
+    // screen >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 14,
+    },
+    // screen >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // screen >= 640px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 14,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 14,
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1536: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+//===========================
 //
 //===========================
