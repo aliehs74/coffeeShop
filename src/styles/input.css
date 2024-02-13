@@ -175,6 +175,21 @@ category
 
 /* 
 ===========================
-
+services-section
 =========================== 
 */
+#services-section::after,
+#services-section::before {
+  content: "";
+  @apply block absolute inset-0 m-auto bg-gray-300 md:content-none;
+}
+html.dark #services-section::after,
+html.dark #services-section::before {
+  @apply bg-white/10;
+}
+#services-section::after {
+  @apply w-px h-[110%];
+}
+#services-section::before {
+  @apply w-full h-px;
+}
