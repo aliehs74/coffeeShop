@@ -1,9 +1,17 @@
 {
-  "headwind.runOnSave": false,
+  "headwind.runOnSave": true,
   "tailwind-fold.foldStyle": "ALL",
   "tailwind-fold.unfoldIfLineSelected": true,
   "tailwind-fold.foldedTextBackgroundColor": "#565656",
   "tailwind-fold.foldedTextColor": "#0EA5E9",
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1500
+  "files.autoSaveDelay": 1500,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "auto-fold-unfold.onEditing": {
+
+    "enable": true,
+    "foldMode": "fast",
+    "unfoldMode": "parent"
+  },
+  "auto-fold-unfold.onSaved": false
 }

@@ -1006,6 +1006,10 @@ font setting
   height: 100vh;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .max-h-10 {
   max-height: 2.5rem;
 }
@@ -1084,6 +1088,10 @@ font setting
 
 .min-h-full {
   min-height: 100%;
+}
+
+.min-h-1 {
+  min-height: 0.25rem;
 }
 
 .w-0 {
@@ -1207,6 +1215,10 @@ font setting
   width: 100vw;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .min-w-16 {
   min-width: 4rem;
 }
@@ -1221,6 +1233,10 @@ font setting
 
 .min-w-\[6\.25rem\] {
   min-width: 6.25rem;
+}
+
+.min-w-2 {
+  min-width: 0.5rem;
 }
 
 .max-w-10 {
@@ -1264,6 +1280,18 @@ font setting
   max-width: fit-content;
 }
 
+.max-w-1 {
+  max-width: 0.25rem;
+}
+
+.max-w-14 {
+  max-width: 3.5rem;
+}
+
+.max-w-5 {
+  max-width: 1.25rem;
+}
+
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1291,6 +1319,31 @@ font setting
 
 .translate-y-\[10\%\] {
   --tw-translate-y: 10%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-24 {
+  --tw-translate-y: 6rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-1\/4 {
+  --tw-translate-y: 25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-4 {
+  --tw-translate-y: 1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-3 {
+  --tw-translate-y: 0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-2 {
+  --tw-translate-y: 0.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1441,6 +1494,23 @@ font setting
 
 .gap-y-9 {
   row-gap: 2.25rem;
+}
+
+.gap-y-6 {
+  row-gap: 1.5rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+
+.gap-y-2\.5 {
+  row-gap: 0.625rem;
 }
 
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1617,6 +1687,21 @@ font setting
 .bg-zinc-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(82 82 91 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1929,6 +2014,11 @@ font setting
 .text-xs\/6 {
   font-size: 0.75rem;
   line-height: 1.5rem;
+}
+
+.text-base\/7 {
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 
 .font-medium {
@@ -2377,6 +2467,11 @@ html.dark #services-section::before {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-orange-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
 .child\:mb-4>* {
   margin-bottom: 1rem;
 }
@@ -2503,16 +2598,6 @@ html.dark #services-section::before {
 :is(.dark .dark\:text-zinc-800) {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-gray-300) {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-:is(.dark .dark\:text-gray-200) {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:hover\:bg-emerald-500:hover) {
@@ -2731,6 +2816,10 @@ html.dark #services-section::before {
 
   .md\:max-w-full {
     max-width: 100%;
+  }
+
+  .md\:max-w-\[\] {
+    max-width: ;
   }
 
   .md\:grid-cols-2 {
